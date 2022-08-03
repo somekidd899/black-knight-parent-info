@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+  	<head>
+    	<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script src="script.js" defer></script>
+        <link rel="icon" href="http://example.com/favicon.png">
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+		<title>Parent Info</title>
+  </head>
+  <body>
+    <header class="header">
+            <ul class="headtabs">
+                <a data-headtab-target="#Home" href="#" class="active headtab" style="text-align:center;vertical-align:middle;">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					Home
+				</a>
+                <a data-headtab-target="#Test1" href="#" class="headtab">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					Cadet Command
+				</a>
+                <a data-headtab-target="#Test2" href="#" class="headtab">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					Parent Info
+				</a>
+				</a>
+            </ul>
+        </header>
+
+        <div class="headtab-content">
+            <div class="content-container">
+                <div id="Home" data-headtab-content class="active">
+                    <p>
+						<h1>Welcome To The Cadet Run Site For The Houston County High School AFJROTC Black Knights.</h1>
+	                    <h2 id='date'>24 March 2022</h2>
+	                    <h3>Run By C/ Sr Airman Winters</h3>
+						<ul>
+						    <li>
+								<p style='font-size: 25px'>
+									In GA-932 Corps Our Motto Is "Service Before Self And Excellence In All We Do. Aim High Achieve Excellence And Protect The Bear"<br><br>
+								  	B- Be Prepared<br>
+								  	E- Expect Excellence<br>
+								  	A- Always Be On Time<br>
+								  	R- Respect Everyone<br>
+								  	S- Show Bear Pride<br>
+								</p>
+							</li>
+						</ul>
+					</p>
+				</div>
+                <div id="Test1" data-headtab-content>
+                    <p><h1> Cadet Chain Of Command </h1>
+					<ul>
+						<li>
+							<p style='font-size: 25px'> 
+							</p>
+						</li>
+					</ul>
+					</p>
+                </div>
+				<div id="Test2" data-headtab-content>
+					<p>
+							<li>
+								<p style='font-size: 25px'>
+             <h1> There Are A Few Important Items To Take Note Of As A Parent Of A Cadet In Our Corps. </h1>
+
+              <li> Christmas Parade And Awards Night ARE mandatory Events. Any Cadet Not In Attendance At These Events Will Be Required To Do TWO Uniform Wears To Make Up For The Event. </li>
+              <li> Uniform Wear Is Monday Of Each Week. Uniform Of The Day Will Be Posted In The Orders Of The Day The Week Prior. Uniform Make Up. If You Are Unable To Wear The Uniform We Ask That You Please Cordinate With Maj. Scarver Or MSgt Turner As Soon As Possible. </li>
+              <li> PT Is Every Friday And Will Be In The Orders Of The Day The Week Of. One Friday Each Month Will Be PT Test Consisting Of Push Ups, And Sit Ups One Minute Each As Well As A One Mile Run. </li>
+              <li> Each Cadet Is Sized And Issued One Full Uniform Consisting Of 1 Service Coat, 1 Wind Breaker, 1 Light Blue Button Up Shirt, 1 Tie For Male Cadets Or Tie Tab For Female Cadets, 1 Pair Of Dress Pants, 1 Belt, 1 Pair Of Solid Black Socks, And 1 Pair Of Black Dress Shoes. </li>
+              <li> Each Cadet Is Also Issued One Full PT Uniform Consisting Of 1 PT shirt, 1 Pair Of PT shorts, One Air Force Sweat shirt, And One Pair Of PT Sweat Pants. </li>
+              <li> Lastly Each Cadet Is Issued 1 Corps Polo Shirt Free Of Charge. Additional Corps Polo Shirts Can Be Purchased For $30 each. Each Additional Shirt Can Also Be Modified To Include The Name Of Your Cadet On The Right Side Of The Shirt At Chest Level. </li>
+						</ul>
+					</p>
+		</div>
+  </body>
+</html>
+<style>
+[data-headtab-content]
+{
+    display: none;
+}
+
+.active[data-headtab-content]
+{
+    display: block;
+}
+
+body
+{
+    padding: 0;
+    margin: 0;
+    height: 1000px;
+    width: auto;
+    background-color: none;
+    justify-content: space-around;
+}
+
+.header
+{
+	display: flex;
+    box-sizing: content-box;
+    padding: 0;
+    margin: 0;
+    height: 100px;
+    width: 0 auto;
+	background-color: #525252;
+}
+
+.content
+{
+    box-sizing: content-box;
+    padding: 0;
+    margin: 0;
+    height: 900px;
+    width: 0 auto;
+    background: #4e54c8;
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
+}
+
+.headtabs
+{
+	margin: 0 auto;
+    padding: 0;
+    height: 100px;
+    width: 100%;
+    display: flex;
+	box-sizing: border-box;
+    justify-content: center;
+	align-items: center;
+    border: 3px solid black;
+	font-family: consolas;
+}
+
+ul a
+{
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	width: 120px;
+    height: 35px;
+	margin: 0 auto;
+	padding: 10px 30px;
+	color: #2196f3;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	letter-spacing: 0.5px;
+	overflow: hidden;
+  	font-size: 0.9rem;
+	transition: 0.2s;
+}
+
+a.active
+{
+    color: #255784;
+	background: #2196f3;
+	box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+}
+
+a span
+{
+	position: absolute;
+    display: block;
+}
+
+a span:nth-child(1)
+{
+	top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#2196f3);
+
+}
+a span:nth-child(2)
+{
+	top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#2196f3);
+
+}
+a span:nth-child(3)
+{
+	bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#2196f3);
+
+}
+a span:nth-child(4)
+{
+	bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(0deg,transparent,#2196f3);
+
+}
+a:hover span:nth-child(1)
+{
+    left: 100%;
+    transition: 1s;
+}
+a:hover span:nth-child(2)
+{
+    top: 100%;
+    transition: 1s;
+    transition-delay:0.25s;
+}
+a:hover span:nth-child(3)
+{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+a:hover span:nth-child(4)
+{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+a:hover
+{
+	color: #255784;
+	background: #2196f3;
+	box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+	transition-delay: 1s;
+}
+
+.headtab-content
+{
+    box-sizing: border-box;
+    position: relative;
+    display:block;
+    width: 0 auto;
+    height: 1002px;
+    background: url('https://cdn.wallpapersafari.com/26/0/IviyTf.png');
+    border: 15px solid rgb;
+}
+
+.content-container
+{
+    box-sizing: border-box;
+    bottom: 14px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    height: 1002px;
+    background-color:  #;
+    border: 10px solid rgb();
+}
+	
+.content-container p
+{
+    width: 100%;
+    height: 50px;
+    font-size: 40px;
+    font-family:'Segoe UI';
+    text-align: center;
+	margin: 0 auto;
+}
+
+/*HEADER TEXT*/
+h1, h2, h3
+{
+	font-size: 30px;
+    color: #c0c0c0;
+	text-align: center;
+}
+/*BODY TEXT*/
+ul, p, li
+{
+	font-size: 20px;
+    color: #c0c0c0
+}
+
+</style>
